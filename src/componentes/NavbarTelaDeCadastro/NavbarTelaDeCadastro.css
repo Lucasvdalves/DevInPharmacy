@@ -1,0 +1,64 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px; 
+    background-color: white;
+    color: black;
+    z-index: 1000; 
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 25px; 
+    height: 25px; 
+    margin-right: 8px;
+    }
+  
+  .contact-info {
+    margin-right: 10px; 
+  }
+  
+  .whatsapp-icon {
+    font-size: 18px;
+    margin-right: 3px; 
+    margin-left: 40px;
+  }
+  
+  .right-section {
+    display: flex;
+  }
+  
+  .social-icon {
+    font-size: 22px; 
+    width: 22px; 
+    height: 22px; 
+    margin-right: 25px; 
+    transition: background-color 0.3s;
+  }
+  
+  .social-icon:hover {
+    background-color: #0056b3; 
+  }
+  
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .right-section {
+      margin-top: 10px;
+    }
+  }
